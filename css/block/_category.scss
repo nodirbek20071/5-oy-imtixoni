@@ -1,0 +1,94 @@
+.category {
+    margin-bottom: 70px;
+    .container {}
+
+    &_container {
+        padding: 0;
+    }
+
+    &_display {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    &_img {}
+
+    &_text {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        color: rgba(219, 68, 68, 1);
+        margin-left: 10px;
+
+
+    }
+
+    &_header {
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 60px;
+
+
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 70px;
+
+
+
+    }
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 170px;
+        height: 145px;
+        padding: 25px 57px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.3)
+    }
+
+    &_icon {
+        margin-bottom: 16px;
+    }
+
+    &_icon--header {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+
+
+    }
+
+    &_line {
+        border: -0.5px solid rgba(0, 0, 0, 1);
+    }
+}
+.category_item:hover{
+    background-color: rgba(219, 68, 68, 1);
+}
+.category_item:hover svg path{
+    stroke: white;
+}
+
+.category_item:hover svg line{
+    stroke: white;
+}
+.category_item:hover h3{
+    color: white;
+}

@@ -1,0 +1,116 @@
+.hero {
+    margin-bottom: 94px;
+
+    .container {}
+
+    &_container {
+        background-color: black;
+        height: 344px;
+        background-image: url(../images/hero_img.png);
+        background-size: 496px;
+        background-repeat: no-repeat;
+        background-position: center left 60%
+    }
+
+    &_height {
+        padding: 0px 64px;
+    }
+
+    &_display {
+        padding-top: 58px;
+        width: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &_img {}
+
+    &_text {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: rgba(250, 250, 250, 1);
+
+    }
+
+    &_logo {
+        width: 294px;
+        font-family: Inter;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: 0.04em;
+        color: rgba(250, 250, 250, 1);
+        margin-bottom: 22px;
+
+
+
+    }
+
+    &_link {
+        text-decoration: underline;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: rgba(250, 250, 250, 1);
+
+    }
+
+    &_icon {
+        margin-left: 8px;
+    }
+
+    @media screen and (max-width:970px) {
+        &_container {
+            background-position: right;
+        }
+    }
+
+    @media screen and (max-width:730px) {
+        &_height {
+            padding: 0;
+        }
+
+        &_container {
+            background-size: 350px;
+            display: flex;
+
+        }
+
+        &_logo {
+            width: 215px;
+            font-size: 18px;
+            line-height: 37px
+        }
+    }
+
+    @media screen and (max-width:512px) {
+        &_container {
+            background-size: 300px;
+            display: block;
+            background-position: center;
+
+        }
+
+        &_height{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 170px;
+        }
+
+        &_display{
+            margin-bottom: 2px;
+        }
+
+        &_logo{
+            margin-bottom: 2px;
+        }
+    }
+
+
+}
